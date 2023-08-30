@@ -25,11 +25,11 @@ function PackageDependencies() {
 
   return (
     <div>
-      <div className="p-20 flex flex-col justify-start items-start gap-12 bg-slate-50">
-        <h1 className="text-5xl text-neutral-900 ">{slug}</h1>
+      <div className="p-20 bg-black flex flex-col justify-start items-start gap-12 bg-slate-50">
+        <h1 className="text-5xl text-white">{slug}</h1>
       </div>
 
-      <div className="flex flex-row px-10 py-20 justify-center items-center container mx-auto">
+      <div className="flex bg-black flex-row px-10 py-20 justify-center items-center">
         {packages === null ? (
           <p>Loading...</p>
         ) : (
@@ -37,20 +37,20 @@ function PackageDependencies() {
 
             <div
 
-              className="max-w-2xl rounded-t-lg rounded-b-md border border-t-4 border-slate-100 border-t-blue-400 px-8 py-4 shadow-lg"
+              className="max-w-2xl rounded-t-lg rounded-b-md border border-t-4 border-slate-100 border-t-green-400 px-8 py-4 shadow-lg"
             >
               <div className="flex flex-row items-center justify-between border-b pb-4">
 
                 {
                   packages.github === "undefined" ? (
 
-                    <h1 className="text-2xl font-semibold text-slate-700">
+                    <h1 className="text-2xl font-semibold text-white">
                       {packages.name}
                     </h1>
 
                   ) : (
                     <a href={packages.github} target={"_blank"}>
-                      <h1 className="text-2xl font-semibold text-slate-700 hover:underline">
+                      <h1 className="text-2xl font-semibold text-white hover:underline">
                         {packages.name}
                       </h1>
                     </a>
@@ -60,35 +60,35 @@ function PackageDependencies() {
 
 
                 <div className="flex flex-col items-end">
-                  <p className="text-sm text-slate-600">Last updated</p>
-                  <p className="text-lg font-bold text-slate-800">{packages.date}</p>
+                  <p className="text-sm text-white">Last updated</p>
+                  <p className="text-lg font-bold text-white">{packages.date}</p>
                 </div>
               </div>
 
-              <p className="border-b border-slate-100 py-4 text-slate-700">
+              <p className="border-b border-slate-100 py-4 text-white">
                 {packages.description}
               </p>
-              <p className="text-slate-600 py-4 flex justify-center">
+              <p className="text-white py-4 flex justify-center">
                 Github Stats
               </p>
-              <div class="flex flex-row items-center justify-between py-4 text-xs text-slate-700" >
-                <p className="flex flex-row items-center gap-1"><i className="fa-solid fa-star text-base text-[#9c7140]"></i><span className="text-yellow-900 text-lg font-semibold">{packages.starsCount}</span></p>
+              <div class="flex flex-row items-center justify-between py-4 text-xs" >
+                <p className="flex flex-row items-center gap-1"><i className="fa-solid fa-star text-base text-[#ffffff]"></i><span className="text-white text-lg font-semibold">{packages.starsCount}</span></p>
 
-                <p className="flex flex-row items-center gap-1"><i className="fa-solid fa-code-commit text-base text-[#9c7140]"></i><span className="text-yellow-900 text-lg font-semibold">{packages.forksCount}</span></p>
+                <p className="flex flex-row items-center gap-1"><i className="fa-solid fa-code-commit text-base text-[#ffffff]"></i><span className="text-white text-lg font-semibold">{packages.forksCount}</span></p>
 
-                <p className="flex flex-row items-center gap-1"><i className="fa-solid fa-user-group text-base text-[#9c7140]"></i><span className="text-yellow-900 text-lg font-semibold">{packages.subscribersCount}</span></p>
+                <p className="flex flex-row items-center gap-1"><i className="fa-solid fa-user-group text-base text-[#ffffff]"></i><span className="text-white text-lg font-semibold">{packages.subscribersCount}</span></p>
               </div>
 
               {
                 packages.issues === "undefined" ? (
                   <div class="flex flex-row items-center justify-start gap-2 hover:gap-3 py-4">
-                    <p class="text-slate-700 ">Welp... Can't seems to find its github page</p>
+                    <p class="text-white">Welp... Can't seems to find its github page</p>
                   </div>
                 ) : (
                   <a href={`${packages.issues}`} target="_blank" className="cursor-pointer">
                     <div class="flex flex-row items-center justify-start gap-2 hover:gap-3 py-4">
-                      <p class="text-red-900 font-semibold">See all issues</p>
-                      <i class="fa-solid fa-arrow-right text-base text-[#632c2c]"></i>
+                      <p class="text-red-600 font-semibold">See all issues</p>
+                      <i class="fa-solid fa-arrow-right text-base text-red-600"></i>
                     </div>
                   </a>
                 )
@@ -96,8 +96,8 @@ function PackageDependencies() {
 
 
 
-              <p className=" mt-4 pb-3 text-slate-700">Dependencies:</p>
-              <div className="grid grid-cols-3 place-items-start items-center overflow-auto gap-4">
+              <p className=" mt-4 pb-3 text-white">Dependencies:</p>
+              <div className="grid grid-cols-3 place-items-start items-center overflow-auto gap-6">
                 {packages.dependencies.length === 0 ? (<p>No dependencies found</p>) :
                   (
                     packages.dependencies.map((i, k) => {
@@ -107,7 +107,7 @@ function PackageDependencies() {
                           <a href={`/package-dependencies/${i.split("/")[0].slice(1)}`} key={k}>
                             <p
 
-                              class="col-span-1 rounded-full bg-slate-50 py-1 px-4 font-semibold text-slate-700"
+                              class="col-span-1 bg-slate-300 rounded-3xl py-2 px-2 font-semibold text-black hover:underline"
                             >
                               {i}
                             </p>
@@ -119,7 +119,7 @@ function PackageDependencies() {
                           <a href={`/package-dependencies/${i}`} key={k}>
                             <p
 
-                              class="col-span-1 rounded-full bg-slate-50 py-1 px-4 font-semibold text-slate-700"
+                              class="col-span-1 bg-slate-300 rounded-3xl py-2 px-2 font-semibold text-black hover:underline"
                             >
                               {i}
                             </p>
