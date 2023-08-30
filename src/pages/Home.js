@@ -154,7 +154,7 @@ function Home() {
             // <h1 key={index}>{JSON.stringify(item)}</h1>
           ))
         ) : (
-          <p>Packages you have used will appear here.</p>
+          <p className="text-white">Packages you have used will appear here.</p>
         )}
       </div>
     </>
