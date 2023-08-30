@@ -147,7 +147,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="px-10 pb-20 bg-black pt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-12 ">
+      <div className="px-10 pb-20 bg-black pt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-12 text-white">
         {finished ? (
           repos.map((item, index) => (
             <PackageInfo item={item} key={index} />
