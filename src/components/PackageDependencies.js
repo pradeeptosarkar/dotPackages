@@ -44,13 +44,13 @@ function PackageDependencies() {
                 {
                   packages.github === "undefined" ? (
 
-                    <h1 className="text-2xl font-semibold text-green-900 bg-green-200 rounded-3xl py-2 px-2 hover:bg-green-100">
+                    <h1 className="text-2xl font-semibold text-green-200 bg-green-900 rounded-3xl py-2 px-2 hover:bg-green-700">
                       {packages.name}
                     </h1>
 
                   ) : (
                     <a href={packages.github} target={"_blank"}>
-                      <h1 className="text-2xl font-semibold text-green-900 bg-green-200 rounded-3xl py-2 px-2 hover:underline hover:bg-green-100">
+                      <h1 className="text-2xl font-semibold text-green-200 bg-green-900 rounded-3xl py-2 px-2 hover:underline hover:bg-green-700">
                         {packages.name}
                       </h1>
                     </a>
@@ -59,7 +59,7 @@ function PackageDependencies() {
 
 
 
-                <div className="flex flex-col items-center text-green-900 bg-green-200 rounded-3xl py-2 px-2">
+                <div className="flex flex-col items-center text-green-200 bg-green-900 rounded-3xl py-2 px-2">
                   <p className="text-sm">Last updated</p>
                   <p className="text-lg font-bold">{packages.date}</p>
                 </div>

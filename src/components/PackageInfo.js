@@ -21,20 +21,20 @@ function PackageInfo({ item }) {
         <p>Loading</p>
       ) : (
         <div
-          className="max-w-2xl rounded-t-lg rounded-b-md border border-t-4 border-green-700 px-8 py-4 shadow-lg"
+          className="max-w-2xl rounded-t-lg rounded-b-md border border-t-4 border-blue-900 px-8 py-4 shadow-lg"
         >
           <div className="flex flex-row items-center justify-between border-b pb-4">
 
             {
               encodedPackage.github === "undefined" ? (
 
-                <h1 className="text-2xl font-semibold text-green-900 bg-green-200 rounded-3xl py-2 px-2  hover:bg-green-100">
+                <h1 className="text-2xl font-semibold text-green-200 bg-green-900 rounded-3xl py-2 px-2  hover:bg-green-700">
                   {encodedPackage.name}
                 </h1>
 
               ) : (
                 <a href={encodedPackage.github} target={"_blank"}>
-                  <h1 className="text-2xl font-semibold text-green-900 bg-green-200 rounded-3xl py-2 px-2 hover:underline  hover:bg-green-100">
+                  <h1 className="text-2xl font-semibold text-green-200 bg-green-900 rounded-3xl py-2 px-2 hover:underline  hover:bg-green-700">
                     {encodedPackage.name}
                   </h1>
                 </a>
@@ -43,13 +43,13 @@ function PackageInfo({ item }) {
 
 
 
-            <div className="flex flex-col items-center text-green-900 bg-green-200 rounded-3xl py-2 px-2">
+            <div className="flex flex-col items-center text-green-200 bg-green-900 rounded-3xl py-2 px-2">
               <p className="text-sm">Last updated</p>
               <p className="text-lg font-bold">{encodedPackage.date}</p>
             </div>
           </div>
 
-          <p className="border-b border-slate-100 py-4 text-white">
+          <p className="border-b border-slate-100 py-4 text-white text-center">
             {encodedPackage.description}
           </p>
           <p className="text-white py-4 flex justify-center">
