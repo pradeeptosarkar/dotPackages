@@ -10,6 +10,7 @@ I created this project with the intention of assisting developers in more effect
 The main and fundamental objective of dotPackages is to assist you in monitoring and overseeing the NPM packages and dependencies of your Node project. dotPackages provides information about Github statistics, the most recent update date, and the connections to the Github repository and issues related to each package. Its purpose is to aid you in recognizing possible inconsistencies and security vulnerabilities that may arise from outdated packages.
 
 This will prove advantageous for not only the project's creator and maintainers but also for contributors and users involved.
+
 ---
 
 ## How I built it ❤️
@@ -32,7 +33,7 @@ This application was built with:
 
 ## Challenges I ran into 🐞
 
-Numerous obstacles were encountered throughout the journey, with the central difficulty residing in the integration of the project's diverse endpoints, ensuring their harmonious collaboration.
+Numerous obstacles were encountered throughout the journey, with the central difficulty residing in the integration of the project's diverse endpoints, ensuring their harmonious collaboration. Apart from this the public APIs used have issues of thier own which hampered the development and debugging process multiple times.
 
 ---
 
@@ -42,6 +43,30 @@ Regarding the technical aspects, I acquired the skill of executing chained API c
 
 ---
 
-**Public API endpoints I have used**:
+## Getting Started
+
+### Prerequisites
+
+The project needs npm installed. If you don't have it already, install it using below comamnd:
+
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/your_username_/Project-Name.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Run the project
+   ```sh
+   npm start
+   ```
+### Public API endpoints I have used:
 * https://raw.githubusercontent.com/:username/:repo/:branch/package.json
 * https://api.npms.io/v2/:package/
