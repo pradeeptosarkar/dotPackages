@@ -136,7 +136,7 @@ function Home() {
             </div>
 
             <button
-              className="p-4 text-blue-100 bg-blue-600 rounded-lg hover:bg-blue-700 active:bg-blue-900"
+              className="p-4 text-blue-100 mt-7 bg-blue-600 rounded-3xl hover:bg-blue-700 active:bg-blue-900"
               onClick={() => finishLine()}
             >
               Submit
