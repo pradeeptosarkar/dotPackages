@@ -57,7 +57,7 @@ The project needs npm installed. If you don't have it already, install it using 
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/pradeeptosarkar/dotpackages.git
    ```
 2. Install NPM packages
    ```sh
