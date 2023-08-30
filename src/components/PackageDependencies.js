@@ -37,20 +37,20 @@ function PackageDependencies() {
 
             <div
 
-              className="max-w-2xl rounded-t-lg rounded-b-md border border-t-4 border-slate-100 border-t-green-400 px-8 py-4 shadow-lg"
+              className="max-w-2xl rounded-t-lg rounded-b-md border border-t-4 border-slate-100 border-green-700 px-8 py-4 shadow-lg"
             >
               <div className="flex flex-row items-center justify-between border-b pb-4">
 
                 {
                   packages.github === "undefined" ? (
 
-                    <h1 className="text-2xl font-semibold text-green-900 bg-green-200 rounded-3xl py-2 px-2">
+                    <h1 className="text-2xl font-semibold text-green-900 bg-green-200 rounded-3xl py-2 px-2 hover:bg-green-100">
                       {packages.name}
                     </h1>
 
                   ) : (
                     <a href={packages.github} target={"_blank"}>
-                      <h1 className="text-2xl font-semibold text-green-900 bg-green-200 rounded-3xl py-2 px-2 hover:underline">
+                      <h1 className="text-2xl font-semibold text-green-900 bg-green-200 rounded-3xl py-2 px-2 hover:underline hover:bg-green-100">
                         {packages.name}
                       </h1>
                     </a>
@@ -72,11 +72,11 @@ function PackageDependencies() {
                 Github Stats
               </p>
               <div class="flex flex-row items-center justify-between py-4 text-xs" >
-                <p className="flex flex-row items-center gap-1"><i className="fa-solid fa-star text-base text-[#ffffff]"></i><span className="text-white text-lg font-semibold">{packages.starsCount}</span></p>
+                <p className="flex flex-row items-center gap-1"><i className="fa-solid fa-star text-base text-[#f5c842]"></i><span className="text-white text-lg font-semibold">{packages.starsCount}</span></p>
 
-                <p className="flex flex-row items-center gap-1"><i className="fa-solid fa-code-commit text-base text-[#ffffff]"></i><span className="text-white text-lg font-semibold">{packages.forksCount}</span></p>
+                <p className="flex flex-row items-center gap-1"><i className="fa-solid fa-code-commit text-base text-[#d142f5]"></i><span className="text-white text-lg font-semibold">{packages.forksCount}</span></p>
 
-                <p className="flex flex-row items-center gap-1"><i className="fa-solid fa-user-group text-base text-[#ffffff]"></i><span className="text-white text-lg font-semibold">{packages.subscribersCount}</span></p>
+                <p className="flex flex-row items-center gap-1"><i className="fa-solid fa-user-group text-base text-[#426ff5]"></i><span className="text-white text-lg font-semibold">{packages.subscribersCount}</span></p>
               </div>
 
               {
@@ -107,7 +107,7 @@ function PackageDependencies() {
                           <a href={`/package-dependencies/${i.split("/")[0].slice(1)}`} key={k}>
                             <p
 
-                              class="col-span-1 bg-green-200 rounded-3xl py-2 px-2 font-semibold text-black hover:underline"
+                              class="col-span-1 bg-green-200 rounded-3xl py-2 px-2 font-semibold text-black hover:underline hover:bg-green-100"
                             >
                               {i}
                             </p>
@@ -119,7 +119,7 @@ function PackageDependencies() {
                           <a href={`/package-dependencies/${i}`} key={k}>
                             <p
 
-                              class="col-span-1 bg-green-200 rounded-3xl py-2 px-2 font-semibold text-black hover:underline"
+                              class="col-span-1 bg-green-200 rounded-3xl py-2 px-2 font-semibold text-black hover:underline hover:bg-green-100"
                             >
                               {i}
                             </p>
