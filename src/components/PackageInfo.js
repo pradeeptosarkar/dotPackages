@@ -58,11 +58,11 @@ function PackageInfo({ item }) {
 
 
           <div class="flex flex-row items-center justify-between py-4 text-xs text-white" >
-            <p className="flex flex-row items-center gap-1"><i className="fa-solid fa-star text-base text-[#ffffff]"></i><span className="text-white text-lg font-semibold">{encodedPackage.starsCount}</span></p>
+            <p className="flex flex-row items-center gap-1"><i className="fa-solid fa-star text-base text-[#f5c842]"></i><span className="text-white text-lg font-semibold">{encodedPackage.starsCount}</span></p>
 
-            <p className="flex flex-row items-center gap-1"><i className="fa-solid fa-code-commit text-base text-[#ffffff]"></i><span className="text-white text-lg font-semibold">{encodedPackage.forksCount}</span></p>
+            <p className="flex flex-row items-center gap-1"><i className="fa-solid fa-code-commit text-base text-[#d142f5]"></i><span className="text-white text-lg font-semibold">{encodedPackage.forksCount}</span></p>
 
-            <p className="flex flex-row items-center gap-1"><i className="fa-solid fa-user-group text-base text-[#ffffff]"></i><span className="text-white text-lg font-semibold">{encodedPackage.subscribersCount}</span></p>
+            <p className="flex flex-row items-center gap-1"><i className="fa-solid fa-user-group text-base text-[#426ff5]"></i><span className="text-white text-lg font-semibold">{encodedPackage.subscribersCount}</span></p>
           </div>
 
 
