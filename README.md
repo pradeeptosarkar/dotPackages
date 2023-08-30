@@ -1,69 +1,47 @@
-<!-- ![header-img](https://res.cloudinary.com/dz37h4oq1/image/upload/v1664143979/all/Group_8730_me0hk0.png)
+## Introduction
+Numerous developers utilize the abundant packages available within the third-party package ecosystem for their respective projects. Nevertheless, the task of handling these packages can become burdensome, exhausting, and, at its worst, expose one's project to potential attacks.
 
-**Team Details:** 
-
-- **Aziz Abdullaev:** [https://azizabdullaev.site ; https://github.com/azyzz228 ]
-- **Chukwuemeka Mba:** [https://www.emekr-tech.vercel.app; https://github.com/Chukwuemeka-Mba; emakamba10@gmail.com]
-- Both of us are 22.Fall.8 Pod members
-- Demo https://eye-of-packages.netlify.app/
----
-
-## Inspiration 🐧
-Many developers make use of the plethora packages that exist in the third party package ecosystem on their various projects. However, managing these packages can become cumbersome, tiring and at worst make one's project vulnerable to attacks.
-
-We built this project to help developers manage their packages better to help seamless and malware-less development.
-
-
+I created this project with the intention of assisting developers in more effectively managing their packages, thereby facilitating smooth and secure development devoid of malware.
 
 ---
-## What it does 🥷🏾
 
-The sole and primary aim of Eye of Packages is to help you track and manage your Node project's NPM packages and dependencies. Eye of Packages presents data on Github stats, last updated date, and the links to Github repo and issues for the package. It is aimed to help you identify potential incompatibilities as well as security threats that can come the obsolete packages. 
+## What it does :interrobang:
 
-The name eye of the package originated from the phrase **"keep an eye"** which is used to signify that one is tracking or monitoring something. Which means that with our node package tracker you can keep an eye on all the packages and/or dependencies you used in building your project. 
+The main and fundamental objective of dotPackages is to assist you in monitoring and overseeing the NPM packages and dependencies of your Node project. dotPackages provides information about Github statistics, the most recent update date, and the connections to the Github repository and issues related to each package. Its purpose is to aid you in recognizing possible inconsistencies and security vulnerabilities that may arise from outdated packages.
 
-This will be beneficial for both the author of the project, the maintainer, contributors and the users.
-
-
+This will prove advantageous for not only the project's creator and maintainers but also for contributors and users involved.
 ---
-## How we built it ❤️
-![tech-stack](https://res.cloudinary.com/dz37h4oq1/image/upload/v1664143982/all/tech_stack_xcts4u.png)
+
+## How I built it ❤️
 
 This application was built with:
+
 - React Js
+
 - Tailwind css
+
 - Node Js
+
 - Javascript
 
----
+- NPM API
 
-## Challenges we ran into 🐞
-
-There were lots of challenges on our way, but our primary challenge was in the assembly of the projects various endpoints and making them work together seamlessly. 
-
-After we settled on the idea, we separated the work according to everyone's skills. Aziz was primarily working on the Backend-end, while Emeka set up integrations & frontend. We faced most challenges when we tried to allocate segregated chunks into one project. 
+- GitHub API
 
 ---
 
-## Accomplishments that we're proud of 🙌
-- **A fully working prototype!:** This has been intense yet insightful. We are very proud to have designed and built an application within such a short timeframe.
-- **Learning how to collaborate on GitHub!:** Not all of us were familiar with making branches or making a PR and merging. This hackathon has fast-tracked the learning process and we are all now very comfortable in using GitHub!
-Learning new technology (like Tailwind CSS, routing in React, implementing sophisticated design features), meeting new people, debugging, debugging, and more debugging!
-The idea of helping developers to manage packages and making positive changes in the developer ecosystem.
+## Challenges I ran into 🐞
+
+Numerous obstacles were encountered throughout the journey, with the central difficulty residing in the integration of the project's diverse endpoints, ensuring their harmonious collaboration.
 
 ---
 
-## What we learned 🤔
-For the technical part, we learned how to perform chained API calls with JS with its notoriously complicated Promises. We have also learned about how dates are formatted and how to convert dates from milliseconds after Jan 1 1970 0:00 UTC to actual dates like 25, Sep, 2022. Moreover, we have faced some issues when we were merging the front-end and backend. We also gave our level best to make the UI/UX look minimalistic and useful! Not to mention, documentations and help from Google for technologies we used.
+## What I learnt 🤔
 
+Regarding the technical aspects, I acquired the skill of executing chained API calls using JavaScript, which involves the intricacies of working with its renowned Promises feature. Additionally, I gained knowledge about date formatting and the conversion of date values from milliseconds after Jan 1, 1970, 0:00 UTC, to human-readable formats such as "25, Sep, 2022." Furthermore, I encountered challenges during the integration of the front-end and backend components. Striving for a minimalist and functional UI/UX, I put forth significant effort. It's worth noting the valuable assistance I found in documentation and resources from Google, related to the technologies I employed.
 
 ---
 
-## What's next for Eye of Packages 🥁
-
-We are aiming at developing our own APIs which will scrap data from Github and NPM. The APIs we have used are accurate but we believe we can be even more precise. Since both of us are very passionate about tackling the issue of helping developers to track their third party packages, it's easy to come up with a lot of ideas for new features (like we did at the beginning of this hackathon!).
-
-Public API endpoints we have used:
+**Public API endpoints I have used**:
 * https://raw.githubusercontent.com/:username/:repo/:branch/package.json
 * https://api.npms.io/v2/:package/
- -->
