@@ -28,13 +28,13 @@ function PackageInfo({ item }) {
             {
               encodedPackage.github === "undefined" ? (
 
-                <h1 className="text-2xl font-semibold text-white">
+                <h1 className="text-2xl font-semibold text-green-900 bg-green-200 rounded-3xl py-2 px-2">
                   {encodedPackage.name}
                 </h1>
 
               ) : (
                 <a href={encodedPackage.github} target={"_blank"}>
-                  <h1 className="text-2xl font-semibold text-white hover:underline">
+                  <h1 className="text-2xl font-semibold text-green-900 bg-green-200 rounded-3xl py-2 px-2 hover:underline">
                     {encodedPackage.name}
                   </h1>
                 </a>

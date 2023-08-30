@@ -117,7 +117,7 @@ function Home() {
               <input
                 type="text"
                 ref={githubLink}
-                className="outline ouline-100 border-x-8 border-y-4 border-green-200 shadow-green-200 shadow-md p-2 rounded-2xl w-[300px] lg:w-[500px] text-black"
+                className="outline-double outline-green-900 ouline-4 border-x-8 border-y-4 border-green-200 shadow-green-200 shadow-md p-2 rounded-2xl w-[300px] lg:w-[500px] text-black"
                 name="githubLink"
                 id=""
                 placeholder="https://github.com/pradeeptosarkar/dotRead"
@@ -128,7 +128,7 @@ function Home() {
               <input
                 type="text"
                 ref={branch}
-                className="outline ouline-100 border-x-8 border-y-4 border-green-200 shadow-green-200 shadow-md p-2 rounded-2xl w-[300px] lg:w-[500px] text-black"
+                className="outline-double outline-green-900 ouline-4 border-x-8 border-y-4 border-green-200 shadow-green-200 shadow-md p-2 rounded-2xl w-[300px] lg:w-[500px] text-black"
                 name="branch"
                 id=""
                 placeholder="main"
