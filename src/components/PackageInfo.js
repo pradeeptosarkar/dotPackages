@@ -43,9 +43,9 @@ function PackageInfo({ item }) {
 
 
 
-            <div className="flex flex-col items-end">
-              <p className="text-sm text-white">Last updated</p>
-              <p className="text-lg font-bold text-white">{encodedPackage.date}</p>
+            <div className="flex flex-col items-center text-green-900 bg-green-200 rounded-3xl py-2 px-2">
+              <p className="text-sm">Last updated</p>
+              <p className="text-lg font-bold">{encodedPackage.date}</p>
             </div>
           </div>
 
