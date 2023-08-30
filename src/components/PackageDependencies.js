@@ -107,7 +107,7 @@ function PackageDependencies() {
                           <a href={`/package-dependencies/${i.split("/")[0].slice(1)}`} key={k}>
                             <p
 
-                              class="col-span-1 bg-slate-300 rounded-3xl py-2 px-2 font-semibold text-black hover:underline"
+                              class="col-span-1 bg-green-200 rounded-3xl py-2 px-2 font-semibold text-black hover:underline"
                             >
                               {i}
                             </p>
@@ -119,7 +119,7 @@ function PackageDependencies() {
                           <a href={`/package-dependencies/${i}`} key={k}>
                             <p
 
-                              class="col-span-1 bg-slate-300 rounded-3xl py-2 px-2 font-semibold text-black hover:underline"
+                              class="col-span-1 bg-green-200 rounded-3xl py-2 px-2 font-semibold text-black hover:underline"
                             >
                               {i}
                             </p>

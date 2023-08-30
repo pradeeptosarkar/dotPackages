@@ -74,17 +74,15 @@ function Home() {
 
   return (
     <>
-      <div className="p-20 bg-black flex flex-col items-center justify-start items-start gap-12">
+      <div className="p-10 bg-black flex flex-col items-center justify-start items-start gap-12">
         <h1 className="text-5xl text-white">dotPackages</h1>
-        <h2 className="text-4xl text-white">NPM Packages Manager</h2>
-        <p className="text-lg text-white text-center">
-          Are you aware of what npm packages you have installed? What do they
-          do? When they were updated? Their issues and dependencies?
+        <h2 className="text-4xl text-white font-mono">NPM Packages Manager</h2>
+        <p className="text-lg text-white text-center font-mono mx-40">
+        Do you possess knowledge about the npm packages you've incorporated? Are you familiar with their functionalities, update history, problems, and interdependencies?
           <br />
-          Eye of Packages is a All-Seeing Eye for your npm packages. It is aimed
-          at helping you identify potentially harmful and/or outdated packages
+          dotRead serves as an all-observant tool for your npm packages, designed to assist you in recognizing packages that might be risky or outdated.
         </p>
-        <p className="text-xl text-white">
+        <p className="text-xl text-white mt-4 font-mono text-center">
           Developed by{" "}
           <a
             href="https://github.com/pradeeptosarkar"
@@ -109,28 +107,28 @@ function Home() {
         </p>
 
         <div className=" container mx-auto flex flex-col  items-center mt-8">
-          <p className="mb-4 text-sm text-white">
+          <p className="mb-8 text-sm text-white">
             Insert a link to your Github repo with package.json file as well as
             branch name.
           </p>
-          <div className="flex flex-col sm:flex-col lg:flex-row gap-8">
-            <div className="flex flex-col flex-start gap-5 text-white">
-              <label for="githubLink">Enter repo name</label>
+          <div className="flex flex-col sm:flex-col lg:flex-col gap-8">
+            <div className="flex flex-col flex-start gap-2 text-white">
+              <label for="githubLink">Name of the GitHub Repository</label>
               <input
                 type="text"
                 ref={githubLink}
-                className="outline-none border border-blue-200 shadow-md p-2 rounded-lg w-[300px] lg:w-[450px] text-black"
+                className="outline ouline-100 border-x-8 border-y-4 border-green-200 shadow-green-200 shadow-md p-2 rounded-2xl w-[300px] lg:w-[500px] text-black"
                 name="githubLink"
                 id=""
                 placeholder="https://github.com/pradeeptosarkar/dotRead"
               />
             </div>
-            <div className="flex flex-col flex-start gap-5 text-white">
-              <label for="branch">Enter branch name</label>
+            <div className="flex flex-col flex-start gap-2 text-white">
+              <label for="branch">Name of the Branch</label>
               <input
                 type="text"
                 ref={branch}
-                className="outline-none border border-blue-200 shadow-md p-2 rounded-lg w-[100%] text-black"
+                className="outline ouline-100 border-x-8 border-y-4 border-green-200 shadow-green-200 shadow-md p-2 rounded-2xl w-[300px] lg:w-[500px] text-black"
                 name="branch"
                 id=""
                 placeholder="main"
