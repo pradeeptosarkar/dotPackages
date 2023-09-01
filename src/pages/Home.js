@@ -28,8 +28,7 @@ function Home() {
     localStorage.setItem("branch", branch.current.value);
 
     const body = await resp.json();
-    //const dependencies_array = Object.keys(body.dependencies)
-    //setDependencies(dependencies_array);
+    
     Object.keys(body.dependencies).map(async (item) => {
       if (item.includes("@")) {
         let p = item.split("/")[0].slice(1);
