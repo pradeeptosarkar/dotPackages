@@ -25,8 +25,8 @@ function PackageDependencies() {
 
   return (
     <div>
-      <div className="p-20 bg-black flex flex-col justify-start items-start gap-12 bg-slate-50">
-        <h1 className="text-5xl text-white">{slug}</h1>
+      <div className="p-20 bg-black flex flex-col justify-start items-start gap-12 bg-black">
+        <h1 className="text-5xl text-green-200">{slug}</h1>
       </div>
 
       <div className="flex bg-black flex-row px-10 py-20 justify-center items-center">
@@ -65,7 +65,7 @@ function PackageDependencies() {
                 </div>
               </div>
 
-              <p className="border-b border-slate-100 py-4 text-white">
+              <p className="border-b border-slate-100 py-4 text-white text-center">
                 {packages.description}
               </p>
               <p className="text-white py-4 flex justify-center">
