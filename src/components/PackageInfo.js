@@ -49,19 +49,21 @@ function PackageInfo({ item }) {
             </div>
           </div>
 
-          <div className="flex flex-row items-center justify-between pb-4 px-10">
           <div className="flex flex-col items-center">
             <p className="flex flex-row items-center gap-1"><i className="fa-solid fa-scale-balanced"></i><span className="text-white text-lg font-semibold">License</span></p>
             <p>{encodedPackage.license}</p>
           </div>
+          
+          <div className="flex flex-row items-center justify-between pb-4 px-10">
+          
 
-          <div className="flex flex-col items-center">
+          {/* <div className="flex flex-col items-center">
             <p className="flex flex-row items-center gap-1"><i className="fa-solid fa-pen-nib"></i><span className="text-white text-lg font-semibold">Author</span></p>
             {
               encodedPackage.author==="undefined" ? (<p>No Info</p>):(<p>{encodedPackage.author}</p>)
             }
             
-          </div>
+          </div> */}
           </div>
 
           
