@@ -148,7 +148,6 @@ function Home() {
         {finished ? (
           repos.map((item, index) => (
             <PackageInfo item={item} key={index} />
-            // <h1 key={index}>{JSON.stringify(item)}</h1>
           ))
         ) : (
           <p className="text-white">Packages you have used will appear here.</p>
