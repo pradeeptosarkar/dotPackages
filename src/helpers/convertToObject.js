@@ -1,4 +1,4 @@
-function convertToObject(name, description, dependencies, github, issues, date, starsCount, forksCount, subscribersCount) {
+function convertToObject(name, description, dependencies, github, issues, date, author, license, starsCount, forksCount, subscribersCount) {
     return {
         name,
         description,
@@ -6,6 +6,8 @@ function convertToObject(name, description, dependencies, github, issues, date, 
         github,
         issues,
         date,
+        author,
+        license,
         starsCount,
         forksCount,
         subscribersCount

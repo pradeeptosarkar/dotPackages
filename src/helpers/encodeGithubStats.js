@@ -8,6 +8,11 @@ export default function encodeGithubStats(obj) {
     const description_c = obj.collected.metadata.description === undefined ? "undefined" : obj.collected.metadata.description;
     const dependencies_c = obj.collected.metadata.dependencies === undefined ? [] : Object.keys(obj.collected.metadata.dependencies);
     const date_c = obj.collected.metadata.date === undefined ? "undefined" : convert_date(obj.collected.metadata.date);
+    //const maintainers_c = obj.collected.metadata.author.nametainers === undefined ? [] : Object.keys(obj.collected.metadata.maintainers);
+    
+    const author_c = ((obj.collected.metadata.author.name === undefined) || (obj.collected.metadata.author.name === null) || !(obj.collected.metadata.author.name)) ? "undefined" : obj.collected.metadata.author.name;
+    
+    const license_c = obj.collected.metadata.license === undefined ? "undefined" : obj.collected.metadata.license;
     
     if (obj.collected.github === undefined) {
       starsCount_c = "undefined";
@@ -23,7 +28,7 @@ export default function encodeGithubStats(obj) {
     const bugs_c = obj.collected.metadata.links.bugs === undefined ? "undefined" : obj.collected.metadata.links.bugs;
 
     let data = convertToObject(
-      name_c, description_c, dependencies_c, repository_c, bugs_c, date_c, starsCount_c, forksCount_c, subscribersCount_c
+      name_c, description_c, dependencies_c, repository_c, bugs_c, date_c, author_c, license_c, starsCount_c, forksCount_c, subscribersCount_c
     )
 
     return data;

@@ -23,7 +23,7 @@ function PackageInfo({ item }) {
         <div
           className="max-w-2xl rounded-t-lg rounded-b-md border border-t-4 border-blue-500 px-8 py-4 shadow-lg"
         >
-          <div className="flex flex-row items-center justify-between border-b pb-4">
+          <div className="flex flex-row items-center justify-between pb-4">
 
             {
               encodedPackage.github === "undefined" ? (
@@ -49,9 +49,27 @@ function PackageInfo({ item }) {
             </div>
           </div>
 
-          <p className="border-b border-slate-100 py-4 text-white text-center">
+          <div className="flex flex-row items-center justify-between pb-4 px-10">
+          <div className="flex flex-col items-center">
+            <p className="flex flex-row items-center gap-1"><i className="fa-solid fa-scale-balanced"></i><span className="text-white text-lg font-semibold">License</span></p>
+            <p>{encodedPackage.license}</p>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <p className="flex flex-row items-center gap-1"><i className="fa-solid fa-pen-nib"></i><span className="text-white text-lg font-semibold">Author</span></p>
+            {
+              encodedPackage.author==="undefined" ? (<p>No Info</p>):(<p>{encodedPackage.author}</p>)
+            }
+            
+          </div>
+          </div>
+
+          
+
+          <p className="border-y border-slate-100 py-4 text-white text-center">
             {encodedPackage.description}
           </p>
+
           <p className="text-white py-4 flex justify-center">
             Github Stats
           </p>
@@ -85,7 +103,13 @@ function PackageInfo({ item }) {
 
           <p className=" mt-4 pb-3 text-white">Dependencies:</p>
           <div className="grid grid-cols-3 place-items-start items-center overflow-auto gap-6">
-            {encodedPackage.dependencies === "undefined" ? (<p>No dependencies found</p>) :
+            {
+            
+            encodedPackage.dependencies === "undefined" ? 
+            
+            (<p>No dependencies found</p>) 
+            
+            :
               (
                 encodedPackage.dependencies.map((i, k) => {
                   if (i.includes('@')) {
