@@ -79,7 +79,7 @@ function PackageInfo({ item }) {
           {
             encodedPackage.issues === "undefined" ? (
               <div class="flex flex-row items-center justify-start gap-2 hover:gap-3 py-4">
-                <p class="text-white ">Welp... Can't seems to find its github page</p>
+                <p class="text-white ">Welp... Can't seem to find its github page</p>
               </div>
             ) : (
               <a href={`${encodedPackage.issues}`} target="_blank" className="cursor-pointer">
