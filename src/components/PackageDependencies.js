@@ -65,10 +65,11 @@ function PackageDependencies() {
                 </div>
               </div>
 
-              {/* <div className="flex flex-col items-center">
-                 <p className="flex flex-row items-center gap-1"><i className="fa-solid fa-scale-balanced"></i><span className="text-white text-lg font-semibold">License</span></p>
-                 <p>{packages.license}</p>
-              </div> */}
+              <div className="flex flex-col items-center">
+                 <p className="flex flex-row items-center gap-1"><i className="fa-solid text-base text-[#ffffff] fa-scale-balanced"></i><span className="text-white text-lg font-semibold">Licenses</span></p>
+                 <p className="text-white">{packages.license}</p>
+                 
+              </div>
 
               <p className="border-y border-slate-100 py-4 text-white text-center">
                 {packages.description}
