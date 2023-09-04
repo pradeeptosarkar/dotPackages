@@ -66,8 +66,8 @@ function PackageDependencies() {
               </div>
 
               <div className="flex flex-col items-center">
-                 <p className="flex flex-row items-center gap-1"><i className="fa-solid text-base text-[#ffffff] fa-scale-balanced"></i><span className="text-white text-lg font-semibold">Licenses</span></p>
-                 <p className="text-white">{packages.license}</p>
+                 <p className="flex flex-row items-center gap-1"><i className="fa-solid text-base text-[#ffffff] fa-scale-balanced"></i><span className="text-white text-lg font-semibold">License</span></p>
+                 <p className="text-white pb-4">{packages.license}</p>
                  
               </div>
 
