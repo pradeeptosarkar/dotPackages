@@ -10,8 +10,6 @@ export default function encodeGithubStats(obj) {
     const date_c = obj.collected.metadata.date === undefined ? "undefined" : convert_date(obj.collected.metadata.date);
     //const maintainers_c = obj.collected.metadata.author.nametainers === undefined ? [] : Object.keys(obj.collected.metadata.maintainers);
     
-    /* const author_c = ((obj.collected.metadata.author.name === undefined) || (obj.collected.metadata.author.name === null) || (obj.collected.metadata.author.name.length==0)) ? "undefined" : obj.collected.metadata.author.name; */
-    
     const license_c = obj.collected.metadata.license === undefined ? "undefined" : obj.collected.metadata.license;
     
     if (obj.collected.github === undefined) {
