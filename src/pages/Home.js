@@ -91,9 +91,12 @@ function Home() {
             Pradeepto Sarkar
           </a>{" "}
           for {" "}
-          <div className="inline-block hover:text-blue-300">
+          <a href="https://fellowship.mlh.io/" className="">
+          <div className="inline-block hover:opacity-60">
           <span className="text-red-500 font-extrabold">M</span><span className="text-blue-600 font-extrabold">L</span><span className="text-yellow-400 font-extrabold">H</span>
           </div>
+          </a>
+          
           
           {" "}Fellowship - Software Engineering Track: Orientation Hackathon, Fall 2023. Github link is{" "}
           <a
