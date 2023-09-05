@@ -79,7 +79,7 @@ function Home() {
         <p className="text-lg text-white text-center font-mono mx-40">
         Do you possess knowledge about the npm packages you've incorporated? Are you familiar with their functionalities, update history, problems, and interdependencies?
           <br />
-          dotRead serves as an all-observant tool for your npm packages, designed to assist you in recognizing packages that might be risky or outdated.
+          dotPackages serves as an all-observant tool for your npm packages, designed to assist you in recognizing packages that might be risky or outdated.
         </p>
         <p className="text-xl text-white mt-4 font-mono text-center">
           Developed by{" "}
