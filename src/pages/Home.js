@@ -109,11 +109,10 @@ function Home() {
         </p>
 
         <div className=" container mx-auto flex flex-col  items-center mt-4 px-8 bg-slate-50 w-min border-purple-700 border-x-8 border-y-8 rounded-xl">
-          <p className="mb-8 mt-4 text-xl text-bold text-black text-center">
-            Insert a link to your Github repo with package.json file as well as
-            branch name.
+          <p className="mb-8 mt-4 text-2xl text-bold text-black text-center">
+            Insert a link to your Github repo.!
           </p>
-          <div className="flex flex-col sm:flex-col lg:flex-col gap-8">
+          <div className="flex flex-col sm:flex-col lg:flex-col ">
             <div className="flex flex-col flex-start gap-2 text-black">
               <label for="githubLink">Name of the GitHub Repository</label>
               <input
@@ -125,7 +124,12 @@ function Home() {
                 placeholder="https://github.com/pradeeptosarkar/dotRead"
               />
             </div>
-            <div className="flex flex-col flex-start gap-2 text-black">
+            <div class="flex flex-row justify-center items-center gap-2">
+              <i class="fa-solid fa-lightbulb text-base text-[#f5c842]"></i>
+              <span class="text-xs">Enter the complete URL of your GitHub repo which contains the "package.json" file at root</span>
+            </div>
+            
+            <div className="flex flex-col flex-start gap-2 mt-8 text-black">
               <label for="branch">Name of the Branch</label>
               <input
                 type="text"
@@ -136,9 +140,13 @@ function Home() {
                 placeholder="main"
               />
             </div>
+            <div class="flex flex-row justify-center items-center gap-2">
+              <i class="fa-solid fa-lightbulb text-base text-[#f5c842]"></i>
+              <span class="text-xs">Enter the name of the branch</span>
+            </div>
 
             <button
-              className="p-4 text-purple-100 mt-7 mb-7 bg-purple-600 rounded-3xl hover:bg-purple-700 active:bg-purple-900"
+              className="p-4 text-purple-100 mt-14 mb-7 bg-purple-600 rounded-3xl hover:bg-purple-700 active:bg-purple-900"
               onClick={() => finishLine()}
             >
               Submit
