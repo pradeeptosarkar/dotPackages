@@ -76,7 +76,7 @@ function Home() {
       <div className="p-10 bg-black flex flex-col items-center justify-start items-start gap-12">
         <h1 className="text-5xl text-white bg-blue-800 rounded-3xl px-3 py-3">dotPackages</h1>
         <h2 className="text-4xl text-white font-mono">NPM Packages Manager</h2>
-        <p className="text-lg text-black text-center font-mono mx-40 bg-green-600 rounded-xl">
+        <p className="text-lg text-white text-center font-mono mx-40 bg-red-600 rounded-xl">
         Do you possess knowledge about the npm packages you've incorporated? Are you familiar with their functionalities, update history, problems, and interdependencies?
           <br />
           dotPackages serves as an all-observant tool for your npm packages, designed to assist you in recognizing packages that might be risky or outdated.
