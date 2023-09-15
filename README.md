@@ -37,13 +37,13 @@ This application was built with:
 
 ---
 
-## Challenges I ran into 🐞
+## Challenges I ran into 😖
 
 Numerous obstacles were encountered throughout the journey, with the central difficulty residing in the integration of the project's diverse endpoints, ensuring their harmonious collaboration. Apart from this the public APIs used have issues of thier own which hampered the development and debugging process multiple times.
 
 ---
 
-## What I learnt 🤔
+## What I learnt 🤓
 
 Regarding the technical aspects, I acquired the skill of executing chained API calls using JavaScript, which involves the intricacies of working with its renowned Promises feature. Additionally, I gained knowledge about date formatting and the conversion of date values from milliseconds after Jan 1, 1970, 0:00 UTC, to human-readable formats such as "25, Sep, 2022." Furthermore, I encountered challenges during the integration of the front-end and backend components. Striving for a minimalist and functional UI/UX, I put forth significant effort. It's worth noting the valuable assistance I found in documentation and resources from Google, related to the technologies I employed.
 
