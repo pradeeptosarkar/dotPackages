@@ -4,7 +4,7 @@ This project is a submission to MLH Fellowship Fall Batch Orientation Hackathon 
 
 *Do consider giving a :star: to the repository if you like the concept.!* 
 
-## Introduction
+## Introduction 😄
 Numerous developers utilize the abundant packages available within the third-party package ecosystem for their respective projects. Nevertheless, the task of handling these packages can become burdensome, exhausting, and, at its worst, expose one's project to potential attacks.
 
 I created this project with the intention of assisting developers in more effectively managing their packages, thereby facilitating smooth and secure development devoid of malware.
@@ -19,7 +19,7 @@ This will prove advantageous for not only the project's creator and maintainers 
 
 ---
 
-## How I built it ❤️
+## How I built it 😍
 
 This application was built with:
 
@@ -41,6 +41,14 @@ Numerous obstacles were encountered throughout the journey, with the central dif
 ## What I learnt 🤓
 
 Regarding the technical aspects, I acquired the skill of executing chained API calls using JavaScript, which involves the intricacies of working with its renowned Promises feature. Additionally, I gained knowledge about date formatting and the conversion of date values from milliseconds after Jan 1, 1970, 0:00 UTC, to human-readable formats such as "25, Sep, 2022." Furthermore, I encountered challenges during the integration of the front-end and backend components. Striving for a minimalist and functional UI/UX, I put forth significant effort. It's worth noting the valuable assistance I found in documentation and resources from Google, related to the technologies I employed.
+
+---
+
+## Scope for further development
+
+The current version is able to fetch and display the most important details about the NPM packages. In the future I wish to include more functionalities such as viewing the source code in a built-in editor right in your own browser, improving aesthetics and incorporating more data analytics of the used packages.
+
+This project is open to any improvements or contributions from the community. To do so, one may raise an issue and discuss.
 
 ---
 
