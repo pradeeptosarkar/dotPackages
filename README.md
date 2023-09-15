@@ -48,7 +48,7 @@ Regarding the technical aspects, I acquired the skill of executing chained API c
 
 The current version is able to fetch and display the most important details about the NPM packages. In the future I wish to include more functionalities such as viewing the source code in a built-in editor right in your own browser, improving aesthetics and incorporating more data analytics of the used packages.
 
-This project is open to any improvements or contributions from the community. To do so, one may raise an issue and discuss.
+This project is open to any improvements or contributions from the community. To do so, one may raise an issue or drop an email at pradeeptosarkarnail@gmail.com.
 
 ---
 
