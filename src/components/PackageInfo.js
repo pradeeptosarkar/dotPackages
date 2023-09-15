@@ -58,7 +58,7 @@ function PackageInfo({ item }) {
 
           
 
-          <p className="border-y border-slate-100 py-4 text-white text-center">
+          <p className="border-y border-slate-100 py-4 text-white text-center overflow-auto">
             {encodedPackage.description}
           </p>
 
