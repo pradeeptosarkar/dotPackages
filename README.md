@@ -11,7 +11,7 @@ I created this project with the intention of assisting developers in more effect
 
 ---
 
-## What it does :interrobang:
+## What it does 😦
 
 The main and fundamental objective of dotPackages is to assist you in monitoring and overseeing the NPM packages and dependencies of your Node project. dotPackages provides information about Github statistics, the most recent update date, and the connections to the Github repository and issues related to each package. Its purpose is to aid you in recognizing possible inconsistencies and security vulnerabilities that may arise from outdated packages.
 
@@ -24,15 +24,10 @@ This will prove advantageous for not only the project's creator and maintainers 
 This application was built with:
 
 - React Js
-
 - Tailwind css
-
 - Node Js
-
 - Javascript
-
 - NPM API
-
 - GitHub API
 
 ---
@@ -65,7 +60,7 @@ The project needs npm installed. If you don't have it already, install it using 
    ```sh
    git clone https://github.com/pradeeptosarkar/dotpackages.git
    ```
-2. Install NPM packages
+2. Install the required NPM packages
    ```sh
    npm install
    ```
