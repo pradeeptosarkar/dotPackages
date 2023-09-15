@@ -37,7 +37,7 @@ function PackageDependencies() {
 
             <div
 
-              className="max-w-2xl rounded-t-lg rounded-b-md border border-t-4 border-blue-500 px-8 py-4 shadow-lg"
+              className="max-w-2xl rounded-t-lg rounded-b-md border border-t-4 border-purple-500 px-8 py-4 shadow-lg"
             >
               <div className="flex flex-row items-center justify-between pb-4">
 
