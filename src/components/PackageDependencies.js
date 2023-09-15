@@ -26,7 +26,7 @@ function PackageDependencies() {
   return (
     <div>
       <div className="p-20 bg-black flex flex-col justify-start items-start gap-12 bg-black">
-        <h1 className="text-5xl text-red-400">{slug}</h1>
+        <h1 className="text-5xl text-purple-400">{slug}</h1>
       </div>
 
       <div className="flex bg-black flex-row px-10 py-20 justify-center items-center">
@@ -44,13 +44,13 @@ function PackageDependencies() {
                 {
                   packages.github === "undefined" ? (
 
-                    <h1 className="text-2xl font-semibold text-black bg-yellow-400 rounded-3xl py-2 px-2 hover:bg-yellow-700">
+                    <h1 className="text-2xl font-semibold text-black bg-violet-400 rounded-3xl py-2 px-2 hover:bg-violet-700">
                       {packages.name}
                     </h1>
 
                   ) : (
                     <a href={packages.github} target={"_blank"}>
-                      <h1 className="text-2xl font-semibold text-black bg-yellow-400 rounded-3xl py-2 px-2 hover:underline hover:bg-yellow-700">
+                      <h1 className="text-2xl font-semibold text-black bg-violet-400 rounded-3xl py-2 px-2 hover:underline hover:bg-violet-700">
                         {packages.name}
                       </h1>
                     </a>
@@ -59,7 +59,7 @@ function PackageDependencies() {
 
 
 
-                <div className="flex flex-col items-center text-black bg-yellow-400 rounded-3xl py-2 px-2">
+                <div className="flex flex-col items-center text-black bg-violet-400 rounded-3xl py-2 px-2">
                   <p className="text-sm">Last updated</p>
                   <p className="text-lg font-bold">{packages.date}</p>
                 </div>
@@ -113,7 +113,7 @@ function PackageDependencies() {
                           <a href={`/package-dependencies/${i.split("/")[0].slice(1)}`} key={k}>
                             <p
 
-                              class="col-span-1 bg-yellow-300 rounded-3xl py-2 px-2 font-semibold text-black hover:underline hover:bg-yellow-200"
+                              class="col-span-1 bg-violet-300 rounded-3xl py-2 px-2 font-semibold text-black hover:underline hover:bg-violet-200"
                             >
                               {i}
                             </p>
@@ -125,7 +125,7 @@ function PackageDependencies() {
                           <a href={`/package-dependencies/${i}`} key={k}>
                             <p
 
-                              class="col-span-1 bg-yellow-300 rounded-3xl py-2 px-2 font-semibold text-black hover:underline hover:bg-yellow-200"
+                              class="col-span-1 bg-violet-300 rounded-3xl py-2 px-2 font-semibold text-black hover:underline hover:bg-violet-200"
                             >
                               {i}
                             </p>

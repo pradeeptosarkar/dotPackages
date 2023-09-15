@@ -21,20 +21,20 @@ function PackageInfo({ item }) {
         <p>Loading</p>
       ) : (
         <div
-          className="max-w-2xl rounded-t-lg rounded-b-md border border-t-4 border-blue-500 px-8 py-4 shadow-lg"
+          className="max-w-2xl rounded-t-lg rounded-b-md border border-t-4 border-purple-500 px-8 py-4 shadow-lg"
         >
           <div className="flex flex-row items-center justify-between pb-4">
 
             {
               encodedPackage.github === "undefined" ? (
 
-                <h1 className="text-2xl font-semibold text-black bg-yellow-400 rounded-3xl py-2 px-2  hover:bg-yellow-700">
+                <h1 className="text-2xl font-semibold text-black bg-violet-400 rounded-3xl py-2 px-2  hover:bg-violet-700">
                   {encodedPackage.name}
                 </h1>
 
               ) : (
                 <a href={encodedPackage.github} target={"_blank"}>
-                  <h1 className="text-2xl font-semibold text-black bg-yellow-400 rounded-3xl py-2 px-2 hover:underline  hover:bg-yellow-700">
+                  <h1 className="text-2xl font-semibold text-black bg-violet-400 rounded-3xl py-2 px-2 hover:underline  hover:bg-violet-700">
                     {encodedPackage.name}
                   </h1>
                 </a>
@@ -43,7 +43,7 @@ function PackageInfo({ item }) {
 
 
 
-            <div className="flex flex-col items-center text-black bg-yellow-400 rounded-3xl py-2 px-2">
+            <div className="flex flex-col items-center text-black bg-violet-400 rounded-3xl py-2 px-2">
               <p className="text-sm">Last updated</p>
               <p className="text-lg font-bold">{encodedPackage.date}</p>
             </div>
@@ -110,7 +110,7 @@ function PackageInfo({ item }) {
                       <a href={`/package-dependencies/${i.split("/")[0].slice(1)}`} key={k}>
                         <p
 
-                          class="col-span-1 bg-yellow-300 rounded-3xl py-2 px-2 font-semibold text-black hover:underline hover:bg-yellow-200"
+                          class="col-span-1 bg-violet-300 rounded-3xl py-2 px-2 font-semibold text-black hover:underline hover:bg-violet-200"
                         >
                           {i}
                         </p>
@@ -122,7 +122,7 @@ function PackageInfo({ item }) {
                       <a href={`/package-dependencies/${i}`} key={k}>
                         <p
 
-                          class="col-span-1 bg-yellow-300 rounded-3xl py-2 px-2 font-semibold text-black hover:underline hover:bg-yellow-200"
+                          class="col-span-1 bg-violet-300 rounded-3xl py-2 px-2 font-semibold text-black hover:underline hover:bg-violet-200"
                         >
                           {i}
                         </p>
