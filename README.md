@@ -1,3 +1,5 @@
+![Banner](./public/dotPackages%20banner.png)
+
 This project is a submission to MLH Fellowship Fall Batch Orientation Hackathon by Pradeepto Sarkar (POD FALL 23.10.A member).
 
 *Do consider giving a :star: to the repository if you like the concept.!* 
