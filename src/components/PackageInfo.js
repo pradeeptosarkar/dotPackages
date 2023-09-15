@@ -28,13 +28,13 @@ function PackageInfo({ item }) {
             {
               encodedPackage.github === "undefined" ? (
 
-                <h1 className="text-2xl font-semibold text-green-200 bg-green-900 rounded-3xl py-2 px-2  hover:bg-green-700">
+                <h1 className="text-2xl font-semibold text-black bg-yellow-400 rounded-3xl py-2 px-2  hover:bg-yellow-700">
                   {encodedPackage.name}
                 </h1>
 
               ) : (
                 <a href={encodedPackage.github} target={"_blank"}>
-                  <h1 className="text-2xl font-semibold text-green-200 bg-green-900 rounded-3xl py-2 px-2 hover:underline  hover:bg-green-700">
+                  <h1 className="text-2xl font-semibold text-black bg-yellow-400 rounded-3xl py-2 px-2 hover:underline  hover:bg-yellow-700">
                     {encodedPackage.name}
                   </h1>
                 </a>
@@ -43,7 +43,7 @@ function PackageInfo({ item }) {
 
 
 
-            <div className="flex flex-col items-center text-green-200 bg-green-900 rounded-3xl py-2 px-2">
+            <div className="flex flex-col items-center text-black bg-yellow-400 rounded-3xl py-2 px-2">
               <p className="text-sm">Last updated</p>
               <p className="text-lg font-bold">{encodedPackage.date}</p>
             </div>
@@ -110,7 +110,7 @@ function PackageInfo({ item }) {
                       <a href={`/package-dependencies/${i.split("/")[0].slice(1)}`} key={k}>
                         <p
 
-                          class="col-span-1 bg-green-200 rounded-3xl py-2 px-2 font-semibold text-black hover:underline hover:bg-green-100"
+                          class="col-span-1 bg-yellow-300 rounded-3xl py-2 px-2 font-semibold text-black hover:underline hover:bg-yellow-200"
                         >
                           {i}
                         </p>
@@ -122,7 +122,7 @@ function PackageInfo({ item }) {
                       <a href={`/package-dependencies/${i}`} key={k}>
                         <p
 
-                          class="col-span-1 bg-green-200 rounded-3xl py-2 px-2 font-semibold text-black hover:underline hover:bg-green-100"
+                          class="col-span-1 bg-yellow-300 rounded-3xl py-2 px-2 font-semibold text-black hover:underline hover:bg-yellow-200"
                         >
                           {i}
                         </p>
