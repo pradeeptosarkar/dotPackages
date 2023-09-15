@@ -73,7 +73,7 @@ function Home() {
 
   return (
     <>
-      <div className="p-10 bg-black flex flex-col items-center justify-start items-start gap-12">
+      <div className="p-10 bg-gray-900 flex flex-col items-center justify-start items-start gap-12">
         <h1 className="text-5xl text-white bg-purple-600 rounded-3xl px-3 py-3">dotPackages</h1>
         <h2 className="text-4xl text-white font-mono">NPM Packages Manager</h2>
         <p className="text-lg text-white text-center font-mono mx-40 bg-purple-500 rounded-xl">
@@ -147,7 +147,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="px-10 pb-20 bg-black pt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-12 text-white">
+      <div className="px-10 pb-20 bg-gray-900 pt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-12 text-white">
         {finished ? (
           repos.map((item, index) => (
             <PackageInfo item={item} key={index} />
