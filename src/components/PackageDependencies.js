@@ -77,13 +77,22 @@ function PackageDependencies() {
               <p className="text-white py-4 flex justify-center">
                 Github Stats
               </p>
-              <div class="flex flex-row items-center justify-between py-4 text-xs" >
-                <p className="flex flex-row items-center gap-1"><i className="fa-solid fa-star text-base text-[#f5c842]"></i><span className="text-white text-lg font-semibold">{packages.starsCount}</span></p>
-
-                <p className="flex flex-row items-center gap-1"><i className="fa-solid fa-code-commit text-base text-[#d142f5]"></i><span className="text-white text-lg font-semibold">{packages.forksCount}</span></p>
-
-                <p className="flex flex-row items-center gap-1"><i className="fa-solid fa-user-group text-base text-[#426ff5]"></i><span className="text-white text-lg font-semibold">{packages.subscribersCount}</span></p>
+              <div class="grid grid-cols-3 gap-4 py-4 text-xs text-white">
+              <div class="flex flex-col items-center gap-1">
+                <i class="fa-solid fa-star text-base text-[#f5c842]"></i>
+                <span class="text-white text-lg font-semibold">{packages.starsCount}</span>
               </div>
+
+              <div class="flex flex-col items-center gap-1">
+                <i class="fa-solid fa-code-commit text-base text-[#d142f5]"></i>
+                <span class="text-white text-lg font-semibold">{packages.forksCount}</span>
+              </div>
+
+              <div class="flex flex-col items-center gap-1">
+                <i class="fa-solid fa-user-group text-base text-[#426ff5]"></i>
+                <span class="text-white text-lg font-semibold">{packages.subscribersCount}</span>
+              </div>
+            </div>
 
               {
                 packages.issues === "undefined" ? (
