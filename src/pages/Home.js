@@ -76,7 +76,7 @@ function Home() {
       <div className="p-10 bg-black flex flex-col items-center justify-start items-start gap-12">
         <h1 className="text-5xl text-white bg-blue-800 rounded-3xl px-3 py-3">dotPackages</h1>
         <h2 className="text-4xl text-white font-mono">NPM Packages Manager</h2>
-        <p className="text-lg text-white text-center font-mono mx-40">
+        <p className="text-lg text-black text-center font-mono mx-40 bg-green-600 rounded-xl">
         Do you possess knowledge about the npm packages you've incorporated? Are you familiar with their functionalities, update history, problems, and interdependencies?
           <br />
           dotPackages serves as an all-observant tool for your npm packages, designed to assist you in recognizing packages that might be risky or outdated.
@@ -108,13 +108,13 @@ function Home() {
           </a>
         </p>
 
-        <div className=" container mx-auto flex flex-col  items-center mt-8">
-          <p className="mb-8 text-sm text-white">
+        <div className=" container mx-auto flex flex-col  items-center mt-4 px-8 bg-slate-50 w-min">
+          <p className="mb-8 mt-4 text-xl text-bold text-black text-center">
             Insert a link to your Github repo with package.json file as well as
             branch name.
           </p>
           <div className="flex flex-col sm:flex-col lg:flex-col gap-8">
-            <div className="flex flex-col flex-start gap-2 text-white">
+            <div className="flex flex-col flex-start gap-2 text-black">
               <label for="githubLink">Name of the GitHub Repository</label>
               <input
                 type="text"
@@ -125,7 +125,7 @@ function Home() {
                 placeholder="https://github.com/pradeeptosarkar/dotRead"
               />
             </div>
-            <div className="flex flex-col flex-start gap-2 text-white">
+            <div className="flex flex-col flex-start gap-2 text-black">
               <label for="branch">Name of the Branch</label>
               <input
                 type="text"
@@ -138,7 +138,7 @@ function Home() {
             </div>
 
             <button
-              className="p-4 text-blue-100 mt-7 bg-blue-600 rounded-3xl hover:bg-blue-700 active:bg-blue-900"
+              className="p-4 text-blue-100 mt-7 mb-7 bg-blue-600 rounded-3xl hover:bg-blue-700 active:bg-blue-900"
               onClick={() => finishLine()}
             >
               Submit
