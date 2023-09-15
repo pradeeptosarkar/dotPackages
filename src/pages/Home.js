@@ -74,9 +74,9 @@ function Home() {
   return (
     <>
       <div className="p-10 bg-black flex flex-col items-center justify-start items-start gap-12">
-        <h1 className="text-5xl text-white bg-blue-800 rounded-3xl px-3 py-3">dotPackages</h1>
+        <h1 className="text-5xl text-white bg-purple-600 rounded-3xl px-3 py-3">dotPackages</h1>
         <h2 className="text-4xl text-white font-mono">NPM Packages Manager</h2>
-        <p className="text-lg text-white text-center font-mono mx-40 bg-red-600 rounded-xl">
+        <p className="text-lg text-white text-center font-mono mx-40 bg-purple-500 rounded-xl">
         Do you possess knowledge about the npm packages you've incorporated? Are you familiar with their functionalities, update history, problems, and interdependencies?
           <br />
           dotPackages serves as an all-observant tool for your npm packages, designed to assist you in recognizing packages that might be risky or outdated.
@@ -86,7 +86,7 @@ function Home() {
           <a
             href="https://github.com/pradeeptosarkar"
             target={"_blank"}
-            className="text-blue-700 hover:text-blue-300"
+            className="text-purple-300 hover:text-purple-100"
           >
             Pradeepto Sarkar
           </a>{" "}
@@ -102,13 +102,13 @@ function Home() {
           <a
             href="https://github.com/pradeeptosarkar/dotPackages"
             target={"_blank"}
-            className="text-orange-700 hover:text-orange-300"
+            className="text-purple-300 hover:text-purple-100"
           >
             here
           </a>
         </p>
 
-        <div className=" container mx-auto flex flex-col  items-center mt-4 px-8 bg-slate-50 w-min border-blue-700 border-x-8 border-y-8 rounded-xl">
+        <div className=" container mx-auto flex flex-col  items-center mt-4 px-8 bg-slate-50 w-min border-purple-700 border-x-8 border-y-8 rounded-xl">
           <p className="mb-8 mt-4 text-xl text-bold text-black text-center">
             Insert a link to your Github repo with package.json file as well as
             branch name.
@@ -119,7 +119,7 @@ function Home() {
               <input
                 type="text"
                 ref={githubLink}
-                className="outline-double outline-blue-900 ouline-4 border-x-8 border-y-4 border-blue-200 shadow-blue-200 shadow-md p-2 rounded-2xl w-[300px] lg:w-[500px] text-black"
+                className="outline-double outline-purple-900 ouline-4 border-x-8 border-y-4 border-purple-200 shadow-purple-200 shadow-md p-2 rounded-2xl w-[300px] lg:w-[500px] text-black"
                 name="githubLink"
                 id=""
                 placeholder="https://github.com/pradeeptosarkar/dotRead"
@@ -130,7 +130,7 @@ function Home() {
               <input
                 type="text"
                 ref={branch}
-                className="outline-double outline-blue-900 ouline-4 border-x-8 border-y-4 border-blue-200 shadow-blue-200 shadow-md p-2 rounded-2xl w-[300px] lg:w-[500px] text-black"
+                className="outline-double outline-purple-900 ouline-4 border-x-8 border-y-4 border-purple-200 shadow-purple-200 shadow-md p-2 rounded-2xl w-[300px] lg:w-[500px] text-black"
                 name="branch"
                 id=""
                 placeholder="main"
@@ -138,7 +138,7 @@ function Home() {
             </div>
 
             <button
-              className="p-4 text-blue-100 mt-7 mb-7 bg-blue-600 rounded-3xl hover:bg-blue-700 active:bg-blue-900"
+              className="p-4 text-purple-100 mt-7 mb-7 bg-purple-600 rounded-3xl hover:bg-purple-700 active:bg-purple-900"
               onClick={() => finishLine()}
             >
               Submit
