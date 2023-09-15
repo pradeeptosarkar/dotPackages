@@ -112,7 +112,7 @@ function PackageDependencies() {
 
 
               <p className=" mt-4 pb-3 text-white">Dependencies:</p>
-              <div className="grid grid-cols-3 place-items-start items-center justify-between overflow-auto gap-6">
+              <div className="grid grid-cols-3 place-items-start justify-items-center gap-10">
                 {packages.dependencies.length === 0 ? (<p>No dependencies found</p>) :
                   (
                     packages.dependencies.map((i, k) => {
@@ -122,7 +122,7 @@ function PackageDependencies() {
                           <a href={`/package-dependencies/${i.split("/")[0].slice(1)}`} key={k}>
                             <p
 
-                              class="col-span-1 bg-violet-300 rounded-3xl py-2 px-2 font-semibold text-black hover:underline hover:bg-violet-200"
+                              class="col-span-1 bg-violet-300 rounded-3xl py-2 px-2 font-semibold text-black overflow-visible hover:underline hover:bg-violet-200"
                             >
                               {i}
                             </p>
@@ -134,7 +134,7 @@ function PackageDependencies() {
                           <a href={`/package-dependencies/${i}`} key={k}>
                             <p
 
-                              class="col-span-1 bg-violet-300 rounded-3xl py-2 px-2 font-semibold text-black hover:underline hover:bg-violet-200"
+                              class="col-span-1 bg-violet-300 rounded-3xl py-2 px-2 font-semibold text-black overflow-visible hover:underline hover:bg-violet-200"
                             >
                               {i}
                             </p>
