@@ -25,11 +25,11 @@ function PackageDependencies() {
 
   return (
     <div>
-      <div className="p-20 bg-gray-900 flex flex-col justify-start items-start gap-12 bg-black">
+      <div className="p-20 bg-gradient-to-r from-gray-900 from-20% via-gray-800 via-gray-700 via-gray-800 to-gray-900 to-20% flex flex-col justify-start items-start gap-12 bg-black">
         <h1 className="text-5xl text-purple-400">{slug}</h1>
       </div>
 
-      <div className="flex bg-gray-900 flex-row px-10 py-20 justify-center items-center">
+      <div className="flex bg-gradient-to-r from-gray-900 from-20% via-gray-800 via-gray-700 via-gray-800 to-gray-900 to-20% flex-row px-10 py-20 justify-center items-center">
         {packages === null ? (
           <p>Loading...</p>
         ) : (
