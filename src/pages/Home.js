@@ -110,7 +110,7 @@ function Home() {
 
         <div className=" container mx-auto flex flex-col  items-center mt-4 px-8 bg-slate-50 w-min border-purple-700 border-x-8 border-y-8 rounded-xl">
           <p className="mb-8 mt-4 text-2xl text-bold text-black text-center">
-            Insert a link to your Github repo.!
+            Insert a link to your Github repo and get a list of the NPM packages used.!
           </p>
           <div className="flex flex-col sm:flex-col lg:flex-col ">
             <div className="flex flex-col flex-start gap-2 text-black">
