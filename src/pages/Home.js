@@ -147,7 +147,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="px-10 pb-20 bg-gradient-to-r from-gray-900 from-20% via-gray-800 via-gray-700 via-gray-800 to-gray-900 to-20% pt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-12 text-white">
+      <div className="px-4 pb-20 bg-gradient-to-r from-gray-900 from-20% via-gray-800 via-gray-700 via-gray-800 to-gray-900 to-20% pt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-2 text-white">
         {finished ? (
           repos.map((item, index) => (
             <PackageInfo item={item} key={index} />
