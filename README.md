@@ -1,3 +1,5 @@
+This project is a submission to MLH Fellowship Fall Batch Orientation Hackathon by Pradeepto Sarkar (POD FALL 23.10.A member)
+
 ## Introduction
 Numerous developers utilize the abundant packages available within the third-party package ecosystem for their respective projects. Nevertheless, the task of handling these packages can become burdensome, exhausting, and, at its worst, expose one's project to potential attacks.
 
