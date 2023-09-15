@@ -124,7 +124,7 @@ function Home() {
                 placeholder="https://github.com/pradeeptosarkar/dotRead"
               />
             </div>
-            <div class="flex flex-row justify-center items-center gap-2">
+            <div class="flex flex-row justify-center items-center gap-2 mt-2">
               <i class="fa-solid fa-lightbulb text-base text-[#f5c842]"></i>
               <span class="text-xs">Enter the complete URL of your GitHub repo which contains the "package.json" file at root</span>
             </div>
@@ -140,7 +140,7 @@ function Home() {
                 placeholder="main"
               />
             </div>
-            <div class="flex flex-row justify-center items-center gap-2">
+            <div class="flex flex-row justify-center items-center gap-2 mt-2">
               <i class="fa-solid fa-lightbulb text-base text-[#f5c842]"></i>
               <span class="text-xs">Enter the name of the branch</span>
             </div>
