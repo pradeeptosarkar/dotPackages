@@ -12,5 +12,4 @@ function convertToObject(name, description, dependencies, github, issues, date, 
         subscribersCount
     };
 }
-
 export default convertToObject;
