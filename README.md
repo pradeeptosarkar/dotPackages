@@ -1,5 +1,7 @@
 ## Special Instructions regarding contribution and HacktoberFest
 - Ensure to read the [Contribution Guide](https://github.com/pradeeptosarkar/dotPackages/blob/main/CONTRIBUTING.md) first
+- Contribute only when you have new feature to add or a major update to existing features. In any case raise an issue first with suitable ideas
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
 
 ![Banner](./public/dotPackages%20banner.png)
