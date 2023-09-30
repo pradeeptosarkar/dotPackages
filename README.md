@@ -1,3 +1,7 @@
+## Special Instructions regarding contribution and HacktoberFest
+- Ensure to read the [Contribution Guide](https://github.com/pradeeptosarkar/dotPackages/blob/main/CONTRIBUTING.md) first
+
+
 ![Banner](./public/dotPackages%20banner.png)
 
 This project is a submission to MLH Fellowship Fall Batch Orientation Hackathon by Pradeepto Sarkar (POD FALL 23.10.A member).
