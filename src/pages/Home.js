@@ -81,7 +81,7 @@ function Home() {
           <br />
           dotPackages serves as an all-observant tool for your npm packages, designed to assist you in recognizing packages that might be risky or outdated.
         </p>
-        <p className="text-xl text-white mt-4 font-mono text-center">
+        {/* <p className="text-xl text-white mt-4 font-mono text-center">
           Developed by{" "}
           <a
             href="https://github.com/pradeeptosarkar"
@@ -107,7 +107,7 @@ function Home() {
             here
           </a>
         </p>
-
+ */}
         <div className=" container mx-auto flex flex-col  items-center mt-4 px-8 bg-slate-50 w-min border-purple-700 border-x-8 border-y-8 rounded-xl">
           <p className="mb-8 mt-4 text-2xl text-bold text-black text-center">
             Insert a link to your Github repo and get a list of the NPM packages used.!
